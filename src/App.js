@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+function Food({fav}){   //props.fav 는 {fav}랑 같다
+  return <h1>I like {fav}</h1>;
+}
+function App() {  //component : html을 반환하는 함수
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>
+           Hello!!
+           <Food fav="kimchi"/>
+           <Food fav="ramen"/>
+           <Food fav="samgiopsal"/>
+           <Food fav="chukumi"/>
+        </h1>
     </div>
+      
+   
   );
 }
 
