@@ -3,6 +3,7 @@ import axios from 'axios';
 import Movie from '../components/Movie';
 import "./Home.css";
 
+
 class Home extends React.Component{
   state = {
     isLoading: true,
@@ -54,4 +55,4 @@ class Home extends React.Component{
   }
 }
 
-export default App;
+export default Home;
